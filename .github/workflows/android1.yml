@@ -1,0 +1,26 @@
+名称： Android CI
+
+于：
+  推：
+    分支： [            “主”            ]
+  拉请求：
+    分支： [            “主”            ]
+
+职位：
+  构建：
+
+    运行： ubuntu-latest
+
+    步骤：
+    -使用： actions/checkout@v3
+    -名称：设置JDK 11
+      使用： actions/setup-java@v3
+      与：
+        java 版本：'11'
+        分布：《铁木林》
+        服务器：等级
+
+    -name : 授予 gradlew 执行权限
+      运行： chmod +x gradlew
+    -名称：使用Gradle构建
+      运行： ./gradlew 构建
